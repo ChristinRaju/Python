@@ -1,9 +1,13 @@
-num = int(input("Enter an integer number: "))
+# Get input from user and convert to integer
+num = int(input("Enter a number: "))
 
-# Initialize the factorial variable to 1
+# Initialize variables
 factorial = 1
 
-for i in range(1, num + 1):
-    factorial *= i
+# Calculate factorial using while loop
+while num > 0:
+    factorial *= num
+    num -= 1
 
-print(f"The factorial of {num} is {factorial}")
+# Print the result
+print("The factorial is", factorial)

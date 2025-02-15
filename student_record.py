@@ -30,7 +30,7 @@ print(f"Grade: {grade}")
 print(f"Passed: {passed}")
 
 # Printing student record in a readable format
-print("\nStudent Record:")
+print("\n========= Student Record =========")
 print(f"Name    : {name}")
 print(f"Reg No  : {regono}")
 print(f"Marks 1 : {marks1}")

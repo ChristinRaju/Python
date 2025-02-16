@@ -5,5 +5,6 @@ b = 1
 
 for _ in range(n):
     print(a, end=" ")
-    a, b = b, a + b 
-
+    next_value = a + b  # Calculate next number
+    a = b  # Shift 'b' to 'a'
+    b = next_value  # Update 'b' with the new value

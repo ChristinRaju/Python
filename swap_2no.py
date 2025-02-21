@@ -1,6 +1,6 @@
 #Write a python program to swap two numbers with and without using temp
 
-# Swapping with a temporary variable
+print("======Swapping with a temporary variable======")
 
 x = input('Enter value of x: ')
 y = input('Enter value of y: ')
@@ -12,7 +12,7 @@ y = temp
 print('The value of x after swapping: ', x)
 print('The value of y after swapping: ', y)
 
-# Swapping without a temporary variable
+print("======Swapping without a temporary variable======")
 
 x = int(input('Enter value of x: '))
 y = int(input('Enter value of y: '))

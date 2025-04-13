@@ -10,8 +10,11 @@ print(f"Result type: {type(sum_numbers)}")
 print("\n=== Explicit Conversion ===")
 # String to Integer
 str_num = "100"
-converted_int = int(str_num)
-print(f"String to Integer: {str_num} -> {converted_int} ({type(converted_int)})")
+try:
+    converted_int = int(str_num)
+    print(f"String to Integer: {str_num} -> {converted_int} ({type(converted_int)})")
+except ValueError:
+    print("Error: Invalid string for integer conversion")
 
 # Integer to Float
 num = 50
@@ -51,10 +54,13 @@ print("Split:", text.split())
 # 4. Type Conversion Examples
 print("\n=== Practical Examples ===")
 # User input conversion
-user_input = input("Enter a number: ")
-number = int(user_input)
-doubled = number * 2
-print(f"Doubled: {doubled}")
+try:
+    user_input = input("Enter a number: ")
+    number = int(user_input)
+    doubled = number * 2
+    print(f"Doubled: {doubled}")
+except ValueError:
+    print("Error: Please enter a valid number")
 
 # List conversion
 numbers = [1, 2, 3, 4, 5]
